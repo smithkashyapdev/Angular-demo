@@ -1,0 +1,56 @@
+<div class="page-wrapper">
+
+  <!-- MENU SIDEBAR-->
+  <aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+      <a routerLink="/products">
+        <img src="assets/images/logo.png" alt="eShop" class="img-responsive" height="20" width="80">
+      </a>
+    </div>
+
+    <!-- Changes done to move code in side menu HTML -->
+    <app-product-category-side-menu></app-product-category-side-menu>  
+
+  </aside>
+  <!-- END MENU SIDEBAR-->
+
+  <div class="page-container">
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop">
+      <div class="section-content section-content-p30">
+        <div class="container-fluid">
+          <div class="header-wrap">
+
+            <!-- Search Component -->
+            <app-search></app-search>
+            <!-- Search Component -->
+
+            <!-- Cart Status -->
+            <app-cart-status></app-cart-status>
+            <!-- Cart Status -->
+          </div>
+          <div class="account-wrap"></div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER DESKTOP-->
+
+    <!-- MAIN CONTENT-->
+
+    <router-outlet></router-outlet>
+
+    <!--end main content-->
+
+
+  </div>
+</div>
+
+<!-- ENDS PAGE CONTAINER -->
+
+<footer>
+  <ul>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+</footer>
